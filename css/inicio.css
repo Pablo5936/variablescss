@@ -1,0 +1,19 @@
+:root {
+  --background-color: #E09540;
+  --text-color: #3D0C02;
+  --title-color: #964B00;
+  --cite-color: #7B3F00;
+  --link-color: #1A2233;
+  --link-hover-decoration: underline;
+  --link-text-decoration: none;
+  --button-font-variant: small-caps;
+  --button-cursor: pointer;
+  --body-width: 90%;
+  --body-margin: 0 auto;
+  --font-family: 'nunito', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+  --title-margin-top: 3px;
+  --title-margin-bottom: 3px;
+  --img-display: block;
+  --img-margin-bottom: 10px;
+}

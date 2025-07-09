@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="img/jpg" href="./img/catalonia.png" />
+  <link rel="stylesheet" href="./css/normalize.min.css">
+  <link rel="stylesheet" id="tema" href="./css/inicio.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="autor" content="Juan Pablo Torres Rios" />
+  <title>CATALUNYA</title>
+</head>
+
+<body>
+  <h1>Los pueblos más bonitos de Cataluña</h1>
+  <p><i>...según encuesta a blogueros de viaje</i></p>
+  <section>
+    <img src="./img/catalunya.png" alt="catalunya" />
+    <label for="theme">Selecciona un tema:</label>
+    <select onchange="cambiarTema(this.value)" id="theme">
+      <option value="inicio">Inicio</option>
+      <option value="aurora">Aurora Boreal</option>
+      <option value="mar">Mar de Jade</option>
+    </select>
+  </section>
+  <p>
+    Esta ha sido una iniciativa de los chicos del blog
+    <a target="_blank" href="https://www.milviatges.com/2016/los-pueblos-mas-bonitos-de-cataluna/"
+      rel="noopener"><i>MilViatges</i></a>
+    (donde hay más pueblos referenciados).
+  </p>
+  <p>
+    El resultado de los 10 primeros pueblos ganadores se muestra en este site.
+    ¡Agrega el tuyo!
+  </p>
+  <ol>
+    <li>
+      <a target="_blank" href="https://www.elproximodestino.com/" rel="noopener">Próximo Destino.</a>
+      (<cite>Meritxell Beltrán</cite>):
+      <a id="v1" href="alcanar.html"><strong>Les Cases d'Alcanar</strong></a>
+    </li>
+    <li>
+      <a target="_blank" href="http://elspetitsviatgers.com/" rel="noopener">Petits Viatgers.</a>
+      (<cite>Montse Delgado</cite>):
+      <a id="v2" href="siurana.html"><strong>Siurana</strong></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://www.unviajedelibros.com/" rel="noopener">Un viaje de libros.</a>
+      (<cite>Silvia Monasterio</cite>):
+      <a id="v3" href="calella.html"><strong>Calella de Pallafrugell</strong></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://www.365sabadosviajando.com/" rel="noopener">365 sábados viajando.</a>
+      (<cite>Virginia y Fran</cite>):
+      <a id="v4" href="tossa.html"><strong>Tossa de Mar</strong></a>
+    </li>
+    <li>
+      Apuntes de viaje-blog privado. (<cite>María Teresa Trilla</cite>):
+      <a id="v5" href="prades.html"><strong>Prades</strong></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://www.conarenaenlamochila.com/" rel="noopener">Con arena en la mochila.</a>
+      (<cite>Robert y Eli</cite>):
+      <a id="v6" href="besalu.html"><strong>Besalú</strong></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://cometeelmundo.net/" rel="noopener">Cómete el mundo.</a>
+      (<cite>Henar y Aitor</cite>):
+      <a id="v7" href="pals.html"><strong>Pals</strong></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://es.quadernsdebitacola.com/" rel="noopener">Quaderns de bitàcola.</a>
+      (<cite>Cèlia y Enric</cite>):
+      <a id="v8" href="montblanc.html"><strong>Montblanc</strong></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://www.viatgespedraforca.cat/" rel="noopener">Viatges Pedraforca.</a>
+      (<cite>Daniel</cite>):
+      <a id="v9" href="castellar.html"><strong>Castellar de n'Hug,</strong></a>
+    </li>
+    <li>
+      <a target="_blank" href="http://www.estemdevacances.com/" rel="noopener">Estem de vacances.</a>
+      (<cite>Xavi y Txell</cite>):
+      <a id="v10" href="peratallada.html"><strong>Peratallada</strong></a>
+    </li>
+  </ol>
+  <p>...</p>
+  <script src="./js/get.js"></script>
+  <script>
+    function cambiarTema(tema) {
+      document.getElementById("tema").setAttribute("href", `./css/${tema}.css`);
+      document.getElementById("v1").setAttribute("href", `alcanar.html?tema=${tema}`);
+    }
+  </script>
+</body>
+
+</html>

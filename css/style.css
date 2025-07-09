@@ -1,0 +1,50 @@
+body {
+  font-family: var(--font-family, 'arial');
+  width: var(--body-width);
+  margin: var(--body-margin);
+  background-color: var(--background-color);
+  -webkit-user-select: none;
+  /* Compatibilidad con WebKit */
+  user-select: none;
+  /* Para navegadores modernos */
+}
+
+img {
+  display: var(--img-display);
+  margin-bottom: var(--img-margin-bottom);
+}
+
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  margin-top: var(--title-margin-top);
+  margin-bottom: var(--title-margin-bottom);
+}
+
+p {
+  color: var(--text-color);
+}
+
+cite {
+  color: var(--cite-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: var(--link-hover-decoration);
+}
+
+button {
+  font-variant: var(--button-font-variant);
+  cursor: var(--button-cursor);
+}
+
+ol {
+  color: var(--text-color);
+}
