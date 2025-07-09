@@ -17,4 +17,12 @@ if ('tema' in parametrosGet) {
   if (select) {
     select.value = tema
   }
+  for (let i = 1; i <= 10; i++) {
+    let link = document.getElementById(`v${i}`)
+    if (link) {
+      // Extrae el nombre de la página, por si en la URL del link ya hay un ?tema viejo
+      let href = link.getAttribute('href').split('?')[0]
+      link.setAttribute('href', `${href}?tema=${tema}`)
+    }
+  }
 }
